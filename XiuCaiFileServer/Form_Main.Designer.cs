@@ -53,6 +53,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Grbox_Info = new System.Windows.Forms.GroupBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox5.SuspendLayout();
@@ -60,6 +62,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Num_网站端口)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Num_限制上传大小)).BeginInit();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.Grbox_Info.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -341,6 +345,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.Grbox_Info);
             this.tabPage2.Controls.Add(this.richTextBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Name = "tabPage2";
@@ -353,12 +358,12 @@
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.Color.Azure;
-            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.richTextBox1.Location = new System.Drawing.Point(3, 3);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(725, 483);
+            this.richTextBox1.Size = new System.Drawing.Size(725, 165);
             this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "\nby：晨露流星\nVx：51529502";
+            this.richTextBox1.Text = "\nby：晨露流星\nVx：51529502\ngithub：https://github.com/ampetervip/XiuCaiFileServer";
             // 
             // notifyIcon1
             // 
@@ -366,6 +371,29 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             this.notifyIcon1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseDoubleClick);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::File_Server.Properties.Resources.收款码;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(719, 290);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Grbox_Info
+            // 
+            this.Grbox_Info.Controls.Add(this.pictureBox1);
+            this.Grbox_Info.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Grbox_Info.Location = new System.Drawing.Point(3, 168);
+            this.Grbox_Info.Name = "Grbox_Info";
+            this.Grbox_Info.Size = new System.Drawing.Size(725, 318);
+            this.Grbox_Info.TabIndex = 2;
+            this.Grbox_Info.TabStop = false;
+            this.Grbox_Info.Text = "关于(喜欢就打赏一下吧)";
             // 
             // Form_Main
             // 
@@ -392,6 +420,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.Num_网站端口)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Num_限制上传大小)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Grbox_Info.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -420,6 +450,8 @@
         private System.Windows.Forms.CheckBox Chk_启动运行文件服务;
         private System.Windows.Forms.CheckBox chk_开机启动;
         private System.Windows.Forms.CheckBox chk_启动最小化窗口;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox Grbox_Info;
     }
 }
 
